@@ -14,7 +14,7 @@ def hello():
 
 @app.route("/<name>")
 def show_report(name):
-    user_api = "4c5ef5601d72782493b1a16b6ac0aa01"
+    user_api = "[Enter Your OpenWeather API KEY]"
     complete_api_link = "https://api.openweathermap.org/data/2.5/weather?q=" + name + "&appid=" + user_api
     api_link = requests.get(complete_api_link)
     api_data = api_link.json()
